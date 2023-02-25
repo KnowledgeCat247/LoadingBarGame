@@ -23,7 +23,8 @@ is how much our y increases, it could be 0.1 or it could be 10.
 Mathf.Sin(yPosition)/damper) + yIntercept);
 ```
 is a fun little equation,
-the equations itself looks like this: ![Function](README Photos/ DesmosFunction.png)
+the equations itself looks like this: 
+![Function](LoadingBarGame/README Photos/DesmosFunction.png)
 and it's simple.
 
 + The y-intercept is the point on the y-axis (Up and Down) that we want our object to hover around
