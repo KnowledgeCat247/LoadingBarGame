@@ -24,7 +24,9 @@ Mathf.Sin(yPosition)/damper) + yIntercept);
 ```
 is a fun little equation,
 the equations itself looks like this: 
-![Function](LoadingBarGame/README Photos/DesmosFunction.png)
+
+![Function](DesmosFunction.png)
+
 and it's simple.
 
 + The y-intercept is the point on the y-axis (Up and Down) that we want our object to hover around
