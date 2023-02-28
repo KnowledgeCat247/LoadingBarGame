@@ -32,7 +32,7 @@ public class NumbersSprite : MonoBehaviour
        if (numberPlace == NumberPlace.Hundreds)
         {
           //All this does is check if it's at 100
-          if (scoreManager.score == 100)
+          if (scoreManager.score >= 100)
           {
             number.enabled = true;
             number.sprite = numbers[1];
@@ -49,7 +49,7 @@ public class NumbersSprite : MonoBehaviour
           {
             number.enabled = false;
           }
-          else if (scoreManager.score == 100)
+          else if (scoreManager.score >= 100)
           {
             number.sprite = numbers[0];
           }          
@@ -97,7 +97,7 @@ public class NumbersSprite : MonoBehaviour
           {
             onesNumber = scoreManager.score - 90;
           }
-          else if (scoreManager.score == 100)
+          else if (scoreManager.score >= 100)
           {
             onesNumber = scoreManager.score;
           } 
