@@ -20,7 +20,7 @@ public class PressingTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (scoreManager.score != 102)
+      if (scoreManager.score != 100)
       { 
        if (!Input.GetMouseButtonDown(0))
        {
@@ -30,10 +30,15 @@ public class PressingTimer : MonoBehaviour
           }
           else
           {
-             scoreManager.removeScore(1);
-             time = oTime;
+             destroyScore(1);
           }
        } 
       }
+    }
+
+    private void destroyScore(int amountRemover)
+    {
+       scoreManager.removeScore(amountRemover);
+       time = oTime;
     }
 }
