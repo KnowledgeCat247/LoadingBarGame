@@ -10,7 +10,7 @@ public class WinGame : MonoBehaviour
 
     public void winGame(int sceneIndex)
     {
-        if (scoreManager.score == 102)
+        if (scoreManager.score >= 100)
         {
           SceneManager.LoadScene(sceneIndex);
         }
